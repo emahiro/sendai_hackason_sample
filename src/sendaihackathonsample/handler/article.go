@@ -22,7 +22,7 @@ func Index(w http.ResponseWriter, r *http.Request) {
 		prob, err = prob.GetAllSortByCreatedAt()
 		prop, err = prop.GetAllSortByCreatedAt()
 	case "like_count":
-		prob, err = prob.GetAllSortByCreatedAt()
+		prob, err = prob.GetAllSortByLikeCount()
 		prop, err = prop.GetAllSortByLikeCount()
 	default:
 		prob, err = prob.GetAll()

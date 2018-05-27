@@ -2,24 +2,24 @@
   "items":[
     {
       "id":1,
-      "title":"TestProposal1",
-      "url": "",
+      "title":"〇〇という課題を解決したい",
+      "url": "https://github.com/emahiro/sendai_hackason_sample/issues/1",
       "like_count":200,
       "created_at": 1527396110,
       "updated_at": 1527396106
     },
     {
       "id":1,
-      "title":"TestProposal2",
-      "url": "",
+      "title":"××に困っているので解決したい",
+      "url": "https://github.com/emahiro/sendai_hackason_sample/issues/2",
       "like_count":110,
       "created_at": 1527396109,
       "updated_at": 1527396105
     },
     {
       "id":1,
-      "title":"TestProposal3",
-      "url": "",
+      "title":"△△を止めたい",
+      "url": "https://github.com/emahiro/sendai_hackason_sample/issues/3",
       "like_count":420,
       "created_at": 1527396108,
       "updated_at": 1527396106
