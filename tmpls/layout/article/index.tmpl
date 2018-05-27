@@ -1,0 +1,34 @@
+<!DOCTYPE HTML>
+<html lang="ja">
+<head>
+    <meta charset="utf-8"/>
+    <title>仙台Kaggle</title>
+</head>
+<body>
+    <h1><a href="/article">仙台-Kaggle</a></h1>
+    <a href="/article?sort=createdAt">新しい順</a> / <a href="/article?sort=like_count">いいね順</a>
+    <h2>Problems</h2>
+    <ul style="list-style: none">
+        {{ range $k, $p := .Problems.Items }}
+        <li>
+            <p>
+                <b><a href="{{ $p.Url }}" target="_blank">{{ $p.Title}}</a></b><br>
+                <span style="font-size: x-small">👍 {{ $p.LikeCount }} / created: {{ $p.CreatedAt }}</span>
+            </p>
+        </li>
+        {{end }}
+    </ul>
+    <h2>Proposals</h2>
+    <ul style="list-style: none">
+        {{ range $k, $p := .Proposals.Items }}
+        <li>
+            <p>
+                <b><a href="{{ $p.Url }}" target="_blank">{{ $p.Title}}</a></b><br>
+                <span style="font-size: x-small">👍 {{ $p.LikeCount }} / created: {{ $p.CreatedAt }}</span>
+            </p>
+        </li>
+    {{end }}
+    </ul>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+</body>
+</html>
